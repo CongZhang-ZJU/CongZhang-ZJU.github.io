@@ -5,86 +5,220 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="智能感知与协同计算课题组官方网站，展示近期科研进展、成员介绍、工作成果与完整新闻。"
+    content="粉蓝拼色的高级简约风个人简历单页模板，带有艺术字排版、纸张海报构图和手绘感装饰元素。"
   >
-  <title>智能感知与协同计算课题组</title>
+  <title>个人简历 | 粉蓝拼色作品页</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Serif+SC:wght@500;700;900&family=Outfit:wght@400;500;700;800&display=swap"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body data-page="home">
-  <!-- 顶部导航将由共享脚本统一渲染，避免每个页面重复维护。 -->
-  <header class="site-header" id="site-header"></header>
+<body>
+  <main class="resume-page">
+    <!-- 漂浮在页面外围的艺术字负责营造海报感，不承载核心信息。 -->
+    <div class="floating-word floating-word-left" aria-hidden="true">PINK</div>
+    <div class="floating-word floating-word-top" aria-hidden="true">resume</div>
+    <div class="floating-word floating-word-right" aria-hidden="true">把热爱写成作品</div>
+    <div class="floating-word floating-word-bottom" aria-hidden="true">blue mood</div>
 
-  <main>
-    <!-- 首页头图区：用于第一时间说明课题组定位、方向和入口。 -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Research Group Website</p>
-          <h1 id="hero-title">智能感知与协同计算课题组</h1>
-          <p class="hero-text" id="hero-text"></p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="research.html">查看工作成果</a>
-            <a class="button button-secondary" href="members.html">了解团队成员</a>
-          </div>
+    <!-- 中间这张“纸”是简历主舞台，主要信息都集中在这里。 -->
+    <section class="resume-scene" aria-label="个人简历展示">
+      <article class="resume-paper">
+        <!-- 外围装饰印章：模拟手绘稿里的圆章和贴纸效果。 -->
+        <div class="stamp stamp-top" aria-hidden="true">
+          <span>图案</span>
+          <small>soft blue</small>
         </div>
-        <aside class="hero-panel" id="hero-panel">
-          <!-- 统计卡片由脚本从共享数据中生成。 -->
-        </aside>
-      </div>
-    </section>
+        <div class="stamp stamp-bottom" aria-hidden="true">
+          <span>小日常</span>
+          <small>love / work</small>
+        </div>
 
-    <!-- 近期科研进展：对应用户要求的首页重点模块。 -->
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Recent Progress</p>
-            <h2>近期科研进展</h2>
-          </div>
-          <a class="text-link" href="news.html">查看完整 News</a>
-        </div>
-        <div class="card-grid" id="recent-progress-list"></div>
-      </div>
-    </section>
+        <!-- 右侧竖排文字对应草图里“侧边艺术字”的感觉。 -->
+        <p class="side-note" aria-hidden="true">山可为路 也可为答案</p>
 
-    <!-- 研究方向：让访客在首页快速理解课题组的研究布局。 -->
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Research Areas</p>
-            <h2>重点研究方向</h2>
+        <!-- 顶部首屏：先展示姓名、方向、简介和基础联系信息。 -->
+        <header class="hero-block">
+          <div class="hero-copy">
+            <p class="eyebrow">Personal Resume Template</p>
+            <p class="hero-kicker">求职方向 / 品牌视觉 / UI 设计 / 前端表达</p>
+            <h1 class="hero-name">你的名字</h1>
+            <p class="hero-subtitle">粉蓝拼色的高级简约风个人简历</p>
+            <p class="hero-summary">
+              这里放一段两到三句的自我介绍。建议概括你的核心方向、审美特征和能力标签，
+              例如：擅长把设计感、排版节奏与实际表达结合起来，能独立完成从概念到落地的作品呈现。
+            </p>
           </div>
-        </div>
-        <div class="card-grid" id="research-area-list"></div>
-      </div>
-    </section>
 
-    <!-- 精选成果：从成果页抽取精华，提升首页信息密度。 -->
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Featured Outputs</p>
-            <h2>代表性工作成果</h2>
+          <!-- 联系信息卡片放在右上角，方便第一屏就被看见。 -->
+          <aside class="contact-card" aria-label="基础信息">
+            <p class="card-title">基础信息</p>
+            <dl class="info-list">
+              <div>
+                <dt>院校 / 专业</dt>
+                <dd>某某大学 · 设计学 / 计算机相关专业</dd>
+              </div>
+              <div>
+                <dt>邮箱</dt>
+                <dd>hello@example.com</dd>
+              </div>
+              <div>
+                <dt>城市</dt>
+                <dd>杭州 / 上海 / 深圳</dd>
+              </div>
+              <div>
+                <dt>主页</dt>
+                <dd>your-portfolio.com</dd>
+              </div>
+            </dl>
+          </aside>
+        </header>
+
+        <!-- 这一行小卡片用于快速概括简历亮点。 -->
+        <section class="quick-facts" aria-label="简历亮点概览">
+          <article class="fact-card">
+            <span class="fact-label">关键词</span>
+            <strong>高级感 / 克制 / 视觉节奏</strong>
+          </article>
+          <article class="fact-card fact-card-accent">
+            <span class="fact-label">擅长方向</span>
+            <strong>品牌视觉 · 排版设计 · 页面表达</strong>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">个人气质</span>
+            <strong>细腻审美 + 清晰逻辑 + 稳定执行</strong>
+          </article>
+        </section>
+
+        <!-- 主体内容分为左主右辅，左侧放经历，右侧放技能与亮点。 -->
+        <section class="resume-grid">
+          <div class="main-column">
+            <section class="resume-section">
+              <div class="section-head">
+                <p class="section-en">About Me</p>
+                <h2>个人概述</h2>
+              </div>
+              <p class="section-text">
+                这里适合写你对自己的一句话总结，以及你最想让面试官记住的风格标签。
+                比如：我希望用更有情绪和秩序感的视觉表达，让信息既好看又好懂。
+              </p>
+            </section>
+
+            <section class="resume-section">
+              <div class="section-head">
+                <p class="section-en">Experience</p>
+                <h2>经历与实践</h2>
+              </div>
+              <div class="timeline">
+                <article class="timeline-item">
+                  <span class="timeline-date">2024 - Now</span>
+                  <div class="timeline-content">
+                    <h3>实习 / 项目经历标题</h3>
+                    <p class="timeline-role">某公司 / 某团队 / 设计或前端相关岗位</p>
+                    <p>
+                      用两到三句话写清楚你做了什么、解决了什么问题、最终产生了什么结果。
+                      建议尽量量化，比如完成了多少页面、参与了哪些模块、输出了哪些成果。
+                    </p>
+                  </div>
+                </article>
+
+                <article class="timeline-item">
+                  <span class="timeline-date">2023 - 2024</span>
+                  <div class="timeline-content">
+                    <h3>校园项目 / 个人作品标题</h3>
+                    <p class="timeline-role">独立负责视觉方案、版式设计与页面表达</p>
+                    <p>
+                      这里可以写你的方法论，例如：先梳理信息层级，再用颜色、字体、留白和装饰语言建立整套视觉秩序。
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="resume-section">
+              <div class="section-head">
+                <p class="section-en">Projects</p>
+                <h2>精选项目</h2>
+              </div>
+              <div class="project-list">
+                <article class="project-card">
+                  <p class="project-tag">Project 01</p>
+                  <h3>粉蓝拼色作品集页面</h3>
+                  <p>
+                    适合填写一个最能代表你审美和完成度的项目，说明视觉策略、排版手法以及最后的落地形式。
+                  </p>
+                </article>
+                <article class="project-card">
+                  <p class="project-tag">Project 02</p>
+                  <h3>个人品牌视觉系统</h3>
+                  <p>
+                    如果你做过 Logo、海报、展板、活动主视觉或者网页专题，这里都可以作为重点展示位。
+                  </p>
+                </article>
+              </div>
+            </section>
           </div>
-          <a class="text-link" href="research.html">进入成果页</a>
-        </div>
-        <div class="feature-grid" id="featured-output-list"></div>
-      </div>
+
+          <aside class="side-column">
+            <section class="resume-section side-section">
+              <div class="section-head">
+                <p class="section-en">Skills</p>
+                <h2>技能标签</h2>
+              </div>
+              <div class="tag-list">
+                <span>视觉设计</span>
+                <span>海报排版</span>
+                <span>品牌延展</span>
+                <span>Figma</span>
+                <span>Photoshop</span>
+                <span>Illustrator</span>
+                <span>HTML / CSS</span>
+                <span>作品包装</span>
+              </div>
+            </section>
+
+            <section class="resume-section side-section quote-section">
+              <p class="quote-mark">“</p>
+              <p class="quote-text">
+                让内容有呼吸感，让画面有情绪，也让每一处排版都能替你说话。
+              </p>
+            </section>
+
+            <section class="resume-section side-section">
+              <div class="section-head">
+                <p class="section-en">Education</p>
+                <h2>教育背景</h2>
+              </div>
+              <p class="mini-block-title">2021 - 2025</p>
+              <p class="mini-block-text">某某大学 · 某某专业 · 本科 / 硕士</p>
+              <p class="mini-block-text">
+                可补充 GPA、主修课程、研究方向或与你目标岗位相关的训练经历。
+              </p>
+            </section>
+
+            <section class="resume-section side-section">
+              <div class="section-head">
+                <p class="section-en">Awards</p>
+                <h2>获奖 / 亮点</h2>
+              </div>
+              <ul class="bullet-list">
+                <li>某设计比赛获奖 / 某项目被展示或落地</li>
+                <li>负责过视觉主导项目，具备完整输出经验</li>
+                <li>具备审美表达与基础前端实现的复合能力</li>
+              </ul>
+            </section>
+          </aside>
+        </section>
+
+        <!-- 底部留一句收尾文案，让整页更像一张完整海报。 -->
+        <footer class="resume-footer">
+          <p>这是一份可直接替换文案的简历模板。后续你只需要把姓名、经历、项目和联系方式改成真实信息即可正式使用。</p>
+        </footer>
+      </article>
     </section>
   </main>
-
-  <!-- 页脚也由脚本统一渲染，保证多页面内容一致。 -->
-  <footer class="site-footer" id="site-footer"></footer>
-
-  <script src="assets/scripts/site-data.js"></script>
-  <script src="assets/scripts/main.js"></script>
 </body>
 </html>
