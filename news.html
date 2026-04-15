@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="智能感知与协同计算课题组完整 News 页面，集中展示学术动态、项目进展、讲座、成果与合作新闻。"
+  >
+  <title>完整 News | 智能感知与协同计算课题组</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body data-page="news">
+  <header class="site-header" id="site-header"></header>
+
+  <main>
+    <!-- News 页面强调“完整动态”，因此加入简单分类筛选，方便浏览。 -->
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Full News Archive</p>
+        <h1>完整 News</h1>
+        <p class="page-intro">
+          这里汇总课题组论文录用、项目申请、学生获奖、学术交流与合作动态，并提供前端原生筛选能力。
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" id="news-filter-list"></div>
+        <div class="timeline" id="news-timeline"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/scripts/site-data.js"></script>
+  <script src="assets/scripts/main.js"></script>
+</body>
+</html>
